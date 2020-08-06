@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+.header{
+    position: fixed;
+    right:0;
+    left:0;
+}
+/*NAVIGATION*/
+.nav{
+    background-color: #ffffff;
+    padding: 1% 3% 1% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__title{
+    color: #2d3982;
+    padding-bottom: 0.7%;
+}
+.nav__list{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.nav__list--link{
+    text-decoration: none;
+    color: black;
+    
+}
+.nav__list--link:hover{
+    border-bottom: 2px solid #e37889;
+    padding-bottom: 22%;
+    font-size: 1.2em;
+}
+.nav__list--greece:hover, .nav__list--hawaii:hover, .nav__list--iceland:hover, .nav__list--home:hover{
+    border-bottom: hidden;
+}
+.nav__list--home, .nav__list--hawaii, .nav__list--iceland, .nav__list--greece{
+    border-bottom: 2px solid #e37889;
+    padding-bottom: 4%;
+}
+/*HOMEPAGE HERO*/
+.hero{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    align-items: center;
+    padding: 7% 3% 4% 3%;
+    
+}
+.hero__section{
+    width: 40.625rem;
+    display: flex;
+    flex-direction: column;
+}
+.hero__title{
+    font-family: "comic sans ms";
+    font-size: 2.5em;
+    color: #101d42;
+}
+.hero__paragraph{
+    margin: 5% 0;
+    font-weight: 100;
+}
+.hero__button{
+    background-color: #5969d0;
+    font-size: 16px;
+    width: 170px;
+    height:40px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.hero__image{
+    height:400px;
+}
+/* GENERAL CARD OUTLINE */
+.main__card{
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 16.688rem;
+    height:23.338rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+/* RECOMMENDATION PART */
+.recommendation__title{
+    color: #101d42;
+    margin: 3% 0 0 5%; 
+    font-size: 20px;
+}
+.recommendation{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 10% 5% 10%;
+    
+}
+.recommendation__card{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card__font{
+    padding-right: 24px;
+    padding-bottom: 19px;
+}
+.recommendation__card:hover{
+    border: 2.5px solid rgba(218, 165, 32, 0.7);
+}
+.recommendation--hawaii{
+    background-image: url(../assets/hawaii.jpg);
+}
+
+.recommendation--iceland{
+    background-image: url(../assets/iceland.jpg);
+}
+.recommendation--greece{
+    background-image: url(../assets/greece.jpg);
+}
+/*CARD SPECIFICS*/
+.card__display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 15%;
+}
+.card--dets{
+    padding-bottom: 5%;
+}
+.main__card h3{
+    border-bottom: 1.5px solid black;
+    box-sizing: content-box;
+    width: 230px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.main__list{
+    background-color: #f0f0f0;
+    width:14.375rem;
+    height:3.125rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__header{
+    color: white;
+    font-size: 80px;
+    margin: 5.5% 0 0% 5%;
+}
+.main{
+    background-size: 100vw;
+    background-position: center;
+    height: 100vh;
+    padding-top: 3%;
+    background-repeat: no-repeat;
+}
+.main__iceland{
+    background-image: url(../assets/iceland.jpg);  
+}
+.main__hawaii{
+    background-image: url(../assets/hawaii.jpg);
+}
+.main__greece{
+    background-image: url(../assets/greece.jpg);
+}
+/*GET STARTED PAGE*/
+.main--color{
+    padding-top: 3.5%;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+.main__holiday{
+    align-self: flex-start;
+    color: rgba(45, 57, 130, 0.98);
+    border-bottom: 2.4px solid #e37889;
+}
+.main__card--size{
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 1% 0;
+    padding: 1%;
+    width: 50%;
+}
+.holiday__form{
+    margin: 1%;
+}
+.holiday__input{
+    background-color: #f0f0f0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form--input{
+    width: 30%;
+    height: 20px;
+}
+.form__input{
+    background-color: rgba(45, 57, 130, 0.98);
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.destination__country{
+    width: 8rem;
+    height: 1.5rem;
+    font-size: 0.85rem;
+}
+.holiday--message{
+    width: 98%;
+    height:100px ;
+    box-sizing: border-box;
+}

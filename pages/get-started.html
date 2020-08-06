@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/main.css">
+        <title>Contact Us - Fly Away</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <h2 class="nav__title">Fly Away</h2>
+                <ul class="nav__list">
+                    <li><a href="../index.html" class="nav__list--link">Home</a></li>
+                    <li><a href="hawaii.html" class="nav__list--link">Hawaii</a></li>
+                    <li><a href="iceland.html" class="nav__list--link">Iceland</a></li>
+                    <li><a href="greece.html" class="nav__list--link">Greece</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main--color">
+            <h1 class="main__holiday">Let Us Plan Your Holiday</h1>
+            <form class="main__card--size" action="action_page.php">
+                <label class="holiday__form" for="fullname">Full Name</label>
+                    <input class="holiday__input holiday__form form--input" type="text" id="fullname" name="fullname" placeholder="Full Name">
+                <label class="holiday__form" for="email">Email Address</label>
+                    <input class="holiday__input holiday__form form--input" type="text" id="email" name="email" placeholder="Email Address">
+                <label class="holiday__form" for="destination">Destination</label>
+                    <select class="holiday__form destination__country" id="country" name="country">
+                      <option value="hawaii">Hawaii</option>
+                      <option value="iceland">Iceland</option>
+                      <option value="greece">Greece</option>
+                    </select>
+                <label class="holiday__form" for="message">Message Us</label>
+                    <textarea class="holiday__form holiday__input holiday--message" id="message" name="message" placeholder="Tell us about your dream holiday..."></textarea>
+                <input class="form__input holiday__form" type="submit" value="Submit">
+            </form> 
+        </main>
+    </body>
+</html>
